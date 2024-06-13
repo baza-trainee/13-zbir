@@ -1,0 +1,16 @@
+@import "./reset";
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+@import "./mediaqueries";
+
+// styles
+html {
+  margin: 0 auto;
+  max-width: 1400px;
+  font-family: "Arial"; // підключити свій
+}
+
+.container {
+  padding: 0 40px;
+}

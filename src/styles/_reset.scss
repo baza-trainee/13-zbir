@@ -1,0 +1,35 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ol,
+ul,
+li,
+aside,
+footer,
+header,
+nav,
+section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  border: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+ol,
+li,
+ul {
+  list-style: none;
+}
