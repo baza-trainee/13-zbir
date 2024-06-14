@@ -1,9 +1,14 @@
 :root {
-      /* accent colors */
-    --primary-accent-color: #F17B0F;
-    --secondary-accent-color: rgba(241, 123, 15, 0.30);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  min-height: 100vh;
 
-    /* fonts - background - border colors */
-    --dark-color: #000;
-    --light-color: #FFF;
+  /* accent colors */
+  --primary-accent-color: #f17b0f;
+  --secondary-accent-color: rgba(241, 123, 15, 0.3);
+
+  /* fonts - background - border colors */
+  --dark-color: #000;
+  --light-color: #fff;
 }
