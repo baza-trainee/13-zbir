@@ -1,11 +1,12 @@
 import { FC } from "react";
 import Test from "./components/Test/Test";
+import Header from "./components/Header/Header";
 import "./styles/index.scss";
 
 const App: FC = () => {
   return (
     <>
-      <header className="container">Header</header>
+      <Header/>
       <Test />
       <footer>Footer</footer>
     </>
