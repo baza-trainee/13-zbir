@@ -1,4 +1,4 @@
-export interface ReusableButtonProps extends React.HTMLAttributes<HTMLElement> {
+export interface ReusableBtnProps extends React.HTMLAttributes<HTMLElement> {
   text: string;
   onClick?: () => void;
   href?: string;
