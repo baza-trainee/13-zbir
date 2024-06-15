@@ -28,7 +28,6 @@ export default function HeaderNav() {
                     <img src={MenuIcon} />
                 </a>
             </div>
-            <hr />
 
             <ul className={`${styles.header__mobile_nav} ${isOpen ? styles.is_open : ''}`}>
                 {ITEMS_HEADER.map((item) => {
