@@ -35,11 +35,12 @@ export default function HeaderNav() {
     const [items, setItems] = useState(itemsHeader);
     const [isOpen, setIsOpen] = useState(false);
 
-    const toogleMenu = () => {
+    const toggleMenu = () => {
         setIsOpen((isOpen) => !isOpen)
     }
   return (
     <div className={`${styles.header__nav} ${isOpen ? 'is-open' : ''}`}>
+        {isOpen && <div className={styles.overlay} onClick={toggleMenu}></div>}
         <nav>
             {items.map((item) => (
                 <li key={item.id}>
@@ -52,13 +53,13 @@ export default function HeaderNav() {
         </nav>
 
             <div className={styles.header__nav_mobile}>
-                 <a onClick={toogleMenu}>
+                 <a onClick={toggleMenu}>
                     <img src={MenuIcon} />
                 </a>
             </div>
             <hr />
 
-            <ul className={isOpen ? styles.header__mobile_nav : styles.header__mobile_nav_hiden}>
+            <ul className={`${styles.header__mobile_nav} ${isOpen ? styles.is_open : ''}`}>
                 {items.map((item) => {
                 return (
                     <li key={item.id}>
