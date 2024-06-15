@@ -3,13 +3,3 @@
 @import './variables';
 @import './mixins';
 @import './mediaqueries';
-
-// styles
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
-
-.container {
-  padding: 0 40px;
-}
