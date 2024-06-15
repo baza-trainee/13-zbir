@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+ 
+    .title {
+        font-size: 18px; 
+        color: var(--primary-dark-color);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        @media screen and (min-width: 1440px) {
+            font-size: 40px; 
+            letter-spacing: 3.2px;
+            color: var(--secondary-dark-color);
+            margin-bottom: 69px;
+        }
+    }
+
+    .contant {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0 16px; //delete, if will be container for mobile version
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            padding: 0;
+            justify-content: space-between;
+        }
+    }
+
+    .info {
+        flex: 1;
+        color: var(--primary-dark-color);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 25.2px */
+        margin-bottom: 0;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+            color: var(--secondary-dark-color);
+            max-width: 488px;
+            margin-bottom: 58px;
+        }
+    }
+
+    .picture {
+        flex: 0 0 340px;
+        background-image: url("./image/soldars-1x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        //object-fit: cover;
+        @media screen and (min-width: 1440px) {
+            flex: 0 0 451px;
+            background-image: url("./image/soldars-2x.jpg");
+        }
+
+    }
+}
