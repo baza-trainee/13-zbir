@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './Header.module.scss';
 import MenuIcon from '../img/menu.svg'
-import ITEMS_HEADER from './costants/costants';
+import ITEMS_HEADER from './data/costants';
 
 export default function HeaderNav() {
     const [isOpen, setIsOpen] = useState(false);

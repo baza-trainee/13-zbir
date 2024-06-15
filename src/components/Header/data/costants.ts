@@ -1,4 +1,4 @@
-import { IHeader } from "./types"
+import { IHeader } from "../type/types"
 
 const ITEMS_HEADER: IHeader[] = [
     {
