@@ -1,16 +1,14 @@
-// ЗРАЗКИ - замінити нашими
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  min-height: 100vh;
 
-/* fonts size */
-// $fs-sx: 12px;
+  /* accent colors */
+  --primary-accent-color: #f17b0f;
+  --secondary-accent-color: rgba(241, 123, 15, 0.3);
 
-/* fonts color */
-// $fc-main: #7c8d66;
-
-/* background color */
-// $bgc-main: #7c8d66;
-
-/* border color */
-// $border-color-second: rgb(240, 240, 240);
-
-/*color for text: */
-// $main-text-color: #3d3d3d;
+  /* fonts - background - border colors */
+  --dark-color: #000;
+  --light-color: #fff;
+}

@@ -1,14 +1,13 @@
-@import "./reset";
-@import "./fonts";
-@import "./variables";
-@import "./mixins";
-@import "./mediaqueries";
+@import './reset';
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './mediaqueries';
 
 // styles
 html {
-  margin: 0 auto;
-  max-width: 1400px;
-  font-family: "Arial"; // підключити свій
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 .container {
