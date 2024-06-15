@@ -1,0 +1,32 @@
+$breakpoints: (
+  mobile: (
+    min-width: 375px,
+    max-width: 767px,
+  ),
+  tablet: (
+    min-width: 768px,
+    max-width: 1439px,
+  ),
+  desktop: (
+    min-width: 1440px,
+  ),
+);
+
+// Mixin to handle the breakpoints
+@mixin respond-to($device) {
+  $query: map-get($breakpoints, $device);
+
+  @if (map-has-key($query, min-width) and map-has-key($query, max-width)) {
+    @media screen and (min-width: #{map-get($query, min-width)}) and (max-width: #{map-get($query, max-width)}) {
+      @content;
+    }
+  } @else if (map-has-key($query, min-width)) {
+    @media screen and (min-width: #{map-get($query, min-width)}) {
+      @content;
+    }
+  } @else if (map-has-key($query, max-width)) {
+    @media screen and (max-width: #{map-get($query, max-width)}) {
+      @content;
+    }
+  }
+}
