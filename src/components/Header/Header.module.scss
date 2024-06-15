@@ -42,7 +42,7 @@
             width: 100%;
         }
 
-        nav {
+        &__desktop {
             display: flex;
             width: auto;
             flex-direction: row;
@@ -51,14 +51,18 @@
             gap: 118px;
             flex-shrink: 0;
 
-            a {
-                cursor: pointer;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.72px;
+            &_list {
+               &_item {
+                  cursor: pointer;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  letter-spacing: 0.72px;
+               } 
             }
+
+            
 
             @media screen and (max-width: 768px) {
                 display: none;
@@ -98,7 +102,7 @@
             @media screen and (max-width: 768px) {
                 display: block;
                 cursor: pointer;
-                a {
+                &__img {
                     width: 40px;
                     height: 40px;
                 }
@@ -133,8 +137,8 @@
                 animation: slideOut 0.5s ease-in-out forwards;
             }
 
-            li {
-                a {
+            &_li {
+                &_a {
                     font-family: Montserrat;
                     font-size: 16px;
                     font-style: normal;
