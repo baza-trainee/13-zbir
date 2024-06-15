@@ -1,0 +1,45 @@
+@mixin button-styles($color, $background-color) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: $color;
+  background-color: $background-color;
+  box-shadow: 6px 0 10px 0 var(--box-shadow-color);
+  padding: 20px 48px;
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+a:link {
+  @include button-styles(var(--light-color), var(--primary-accent-color));
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-hover-accent-color);
+  }
+}
+
+button {
+  @include button-styles(
+    var(--secondary-dark-color),
+    var(--secondary-accent-color)
+  );
+  border: 1.5px solid var(--primary-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-hover-accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  button,
+  a:link {
+    padding: 24px 68px;
+    font-size: 24px;
+  }
+}
