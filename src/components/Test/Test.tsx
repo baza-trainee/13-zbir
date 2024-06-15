@@ -6,12 +6,13 @@ const Test: FC = () => {
   return (
     <main>
       <div className={style.test}>Test</div>
-      <ReusableButton href="url" target="_blank" rel="noopener noreferrer">
-        Задонатити
-      </ReusableButton>
-      <ReusableButton onClick={() => alert('Hello')}>
-        Поділитися збором
-      </ReusableButton>
+      <ReusableButton
+        text="Задонатити"
+        href="url"
+        target="_blank"
+        rel="noopener noreferrer"
+      />
+      <ReusableButton text="Поділитися збором" onClick={() => alert('Hello')} />
     </main>
   );
 };

@@ -1,23 +1,16 @@
+import { ReusableButtonProps } from '../../types/ReusableButtonProps';
 import './ReusableButton.module.scss';
 
-interface ReusableButtonProps extends React.HTMLAttributes<HTMLElement> {
-  children: React.ReactNode;
-  onClick?: () => void;
-  href?: string;
-  target?: string;
-  rel?: string;
-}
-
 const ReusableButton: React.FC<ReusableButtonProps> = ({
-  children,
+  text,
   onClick,
   ...props
 }) => {
-  const ReusableButton = props.href ? 'a' : 'button';
+  const ReusableBtn = props.href ? 'a' : 'button';
   return (
-    <ReusableButton {...props} onClick={onClick}>
-      {children}
-    </ReusableButton>
+    <ReusableBtn {...props} onClick={onClick}>
+      {text}
+    </ReusableBtn>
   );
 };
 
