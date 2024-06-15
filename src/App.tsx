@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import "./styles/index.scss";
 import Hero from "./components/Hero/Hero";
 
+
 const App: FC = () => {
   return (
     <>

@@ -1,22 +1,21 @@
 @import './reset';
 @import './fonts';
 @import './variables';
-<<<<<<< HEAD
-<<<<<<< HEAD
 @import './mixins';
 @import './mediaqueries';
-=======
-@import './mixinbreakpoints';
->>>>>>> f45bd8a (update btn media styles)
-=======
->>>>>>> 1e8ad4e (delete mixins)
 
-// styles
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
+body {
+  font-family: var(--primary-font);
+  background-color: #fffdf9;
+  min-height: 100vh;
+}
+
 .container {
-  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1000px;
 }
