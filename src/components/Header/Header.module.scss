@@ -7,8 +7,11 @@
     gap: 20px;
 
     @media screen and (max-width: 768px) {
+        position: sticky;
+        top: 0;
         margin: 40px 16px;
         gap: 14px;
+        z-index: 1000;
     }
 
     &__logo {
@@ -16,15 +19,12 @@
         height: auto;
 
         @media screen and (max-width: 768px) {
-
             img {
                 width: 77px;
                 height: 60px;
                 flex-shrink: 0;
             }
-            
         }
-
     }
 
     &__nav {
@@ -77,8 +77,6 @@
            } 
         }
 
-        
-
         hr {
             border: 3px solid #E7A515;
             width: 100%;
@@ -111,23 +109,28 @@
     &__mobile_nav {
         display: none;
 
-        
         @media screen and (max-width: 768px) {
             display: flex;
             padding: 28px 32px;
             flex-direction: column;
             gap: 20px;
             top: 0;
-            position: absolute;
             right: -100%;
+            position: fixed;
             top: 6.3rem;
             width: 60%;
             background-color: #FFFDF9;
             z-index: 999;
-            transition: right .5s ease-in-out;
+            transition: right 0.5s ease-in-out;
 
             &.is_open {
                 right: 0;
+                animation: slideIn 0.5s ease-in-out forwards;
+            }
+
+            &.is_hidden {
+                right: -100%;
+                animation: slideOut 0.5s ease-in-out forwards;
             }
 
             li {
@@ -141,30 +144,38 @@
                 }
             }
         }
+    }
 
-        &_hiden {
-            display: none;
-
-            @media screen and (max-width: 768px) {
-                display: none;
-            }
+    @keyframes slideIn {
+        from {
+            right: -100%;
         }
+        to {
+            right: 0;
+        }
+    }
 
-        
+    @keyframes slideOut {
+        from {
+            right: 0;
+        }
+        to {
+            right: -100%;
+        }
     }
 
     .overlay {
         display: none;
-    
+
         @media screen and (max-width: 768px) {
-          display: block;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.4);
-          z-index: 998;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 998;
         }
-      }
+    }
 }
