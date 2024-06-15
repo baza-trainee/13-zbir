@@ -3,7 +3,7 @@ import styles from './ImportantInfo.module.scss';
 
 const ImportantInfo = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='how-it-works'>
       <h2 className={styles.mainInfoTitle}>ЗБІР</h2>
       <h3 className={styles.infoTitle}>Чому це важливо ?</h3>
       <div className={styles.infoWrapper}>

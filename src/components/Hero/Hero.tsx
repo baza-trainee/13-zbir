@@ -6,7 +6,7 @@ import ReusableBtn from '../ReusableBtn/ReusableBtn'
 
 export default function Hero() {
   return (
-    <div className={styles.hero_section}>
+    <div className={styles.hero_section} id='goal'>
       <h1>ЗБІР НА РЕБ ДЛЯ 13-ГО ОКРЕМОГО  СТРІЛЕЦЬКОГО БАТАЛЬЙОНУ</h1>
       <div className={styles.hero_section__main}>
           <img src={MainImg} className={styles.hero_section__main_img}/>
