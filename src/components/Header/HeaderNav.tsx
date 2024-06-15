@@ -41,13 +41,14 @@ export default function HeaderNav() {
   return (
     <div className={`${styles.header__nav} ${isOpen ? 'is-open' : ''}`}>
         <nav>
-            {items.map((item) => {
-                return (
-                    <a href={item.route} key={item.id}>
+            {items.map((item) => (
+                <li key={item.id}>
+                    <a href={item.route} >
                         {item.title}
                     </a>
-                );
-            })}
+                </li> 
+
+            ))}
         </nav>
 
             <div className={styles.header__nav_mobile}>
@@ -60,8 +61,8 @@ export default function HeaderNav() {
             <ul className={isOpen ? styles.header__mobile_nav : styles.header__mobile_nav_hiden}>
                 {items.map((item) => {
                 return (
-                    <li>
-                    <a href={item.route} key={item.id}>
+                    <li key={item.id}>
+                    <a href={item.route} >
                         {item.title}
                     </a>
                     </li>

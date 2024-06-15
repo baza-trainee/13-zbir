@@ -1,5 +1,5 @@
 import { ReusableButtonProps } from '../../types/ReusableButtonProps';
-import './ReusableButton.module.scss';
+import styles from './ReusableButton.module.scss';
 
 const ReusableButton: React.FC<ReusableButtonProps> = ({
   text,
@@ -8,7 +8,7 @@ const ReusableButton: React.FC<ReusableButtonProps> = ({
 }) => {
   const ReusableBtn = props.href ? 'a' : 'button';
   return (
-    <ReusableBtn {...props} onClick={onClick}>
+    <ReusableBtn {...props} onClick={onClick} className={styles.reusableButton}>
       {text}
     </ReusableBtn>
   );
