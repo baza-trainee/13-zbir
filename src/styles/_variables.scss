@@ -1,14 +1,30 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-size: cover;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #fffdf9;
   min-height: 100vh;
+}
 
+:root {
   /* accent colors */
-  --primary-accent-color: #f17b0f;
-  --secondary-accent-color: rgba(241, 123, 15, 0.3);
+  --primary-accent-color: #e7a515;
+  --secondary-accent-color: rgba(231, 165, 21, 0.2);
+  --numbers-accent-color: rgba(176, 175, 160, 0.5);
 
-  /* fonts - background - border colors */
-  --dark-color: #000;
+  /* button colors */
+  --box-shadow-color: rgba(0, 0, 0, 0.25);
+  --primary-hover-accent-color: #d19104;
+  --secondary-hover-accent-color: rgba(231, 165, 21, 0.4);
+
+  /* fonts - borders colors */
+  --primary-font: 'Montserrat', sans-serif;
+  --primary-dark-color: #000;
+  --secondary-dark-color: #232121;
   --light-color: #fff;
 }
