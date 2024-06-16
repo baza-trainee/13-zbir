@@ -1,4 +1,4 @@
-import Button from "../ReusableBtn/ReusableBtn";
+import ReusableBtn from "../ReusableBtn/ReusableBtn";
 
 import styles from "./About.module.scss";
 
@@ -15,7 +15,7 @@ const About = () => {
                 </div>
             </div>
             <div className={styles.buttonContainer}>
-                <Button 
+                <ReusableBtn 
                 text={"Задонатити"} 
                 href={"url"}
             />
