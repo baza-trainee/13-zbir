@@ -1,4 +1,4 @@
-// import Button from "";
+import Button from "../ReusableButton/ReusableButton";
 
 import styles from "./About.module.scss";
 
@@ -14,7 +14,7 @@ const About = () => {
                 <div className={styles.picture}>
                 </div>
             </div>
-            {/* <Button/> */}
+            <Button text={"Задонатити"} href={"a"}/>
         </section>
     )
 }
