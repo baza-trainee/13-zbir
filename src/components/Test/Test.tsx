@@ -1,19 +1,19 @@
 import { FC } from 'react';
 import style from './Test.module.scss';
-import ReusableButton from '../ReusableBtn/ReusableBtn';
+// import ReusableButton from '../ReusableBtn/ReusableBtn';
 import ScrollUpBtn from '../ScrollUpBtn/ScrollUpBtn';
 
 const Test: FC = () => {
   return (
     <main>
       <div className={style.test}>Test</div>
-      <ReusableButton
+      {/* <ReusableButton
         text="Задонатити"
         href="url"
         target="_blank"
         rel="noopener noreferrer"
       />
-      <ReusableButton text="Поділитися збором" onClick={() => alert('Hello')} />
+      <ReusableButton text="Поділитися збором" onClick={() => alert('Hello')} /> */}
       <ScrollUpBtn />
     </main>
   );
