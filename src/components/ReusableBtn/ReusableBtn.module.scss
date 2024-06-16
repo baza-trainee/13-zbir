@@ -13,7 +13,7 @@
   transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
-a:link {
+.reuseLinkBtn {
   @include button-styles(var(--light-color), var(--primary-accent-color));
   display: inline-block;
 
@@ -23,7 +23,7 @@ a:link {
   }
 }
 
-button {
+.reuseBtn {
   @include button-styles(
     var(--secondary-dark-color),
     var(--secondary-accent-color)
@@ -36,9 +36,9 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  button,
-  a:link {
+@media screen and (min-width: 1440px) {
+  .reuseBtn,
+  .reuseLinkBtn {
     padding: 24px 68px;
     font-size: 24px;
   }
