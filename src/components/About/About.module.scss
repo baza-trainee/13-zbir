@@ -25,10 +25,12 @@
         flex-direction: column;
         justify-content: start;
         padding: 0 16px; //delete, if will be container for mobile version
+        margin-bottom: 36px;
         @media screen and (min-width: 1440px) {
             flex-direction: row;
             padding: 0;
             justify-content: space-between;
+            margin-bottom: 60px;
         }
     }
 
@@ -55,10 +57,16 @@
         background-repeat: no-repeat;
         background-position: center;
         //object-fit: cover;
+        margin-top: 36px;
         @media screen and (min-width: 1440px) {
             flex: 0 0 451px;
             background-image: url("./image/soldars-2x.jpg");
+            margin-top: 0px;
         }
 
+    }
+
+    .buttonContainer {
+        text-align: center;
     }
 }
