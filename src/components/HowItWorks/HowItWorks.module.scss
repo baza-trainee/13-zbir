@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    .title {
+        font-size: 18px; 
+        color: var(--primary-dark-color);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            font-size: 40px; 
+            letter-spacing: 3.2px;
+            color: var(--secondary-dark-color);
+            margin-bottom: 60px;
+        }
+    }
+
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 36px;
+        border: 1px solid red;
+        @media screen and (min-width: 1200px) {
+           flex-direction: row;
+           justify-content: space-around;
+           padding: 0;
+           gap: 0;
+           width: 100%;
+        }
+    }
+
+    .step {
+        left: -45px;
+        position: relative;
+        @media screen and (min-width: 1200px) {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .stepNumber {
+        font-size: 128px;
+        color: var(--steps-color);
+        text-align: center;
+        font-weight: 600;
+        line-height: 90%;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            font-size: 150px;
+        }
+    }
+
+    .stepText {
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 500;
+        color: var(--secondary-dark-color);
+        letter-spacing: 2px;
+        font-style: normal;
+        position: absolute;
+        bottom: 10px;
+        left: 25px;
+        white-space: nowrap;
+        border: 1px solid blue;
+        @media screen and (min-width: 1200px) {
+            left: 25px;
+            bottom: 15px;
+        }
+    }
+
+    .arrow {
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+        }
+
+    }
+
+}
