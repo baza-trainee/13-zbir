@@ -1,10 +1,29 @@
 .scrollBtn {
+  position: fixed;
+  right: -100px;
+  bottom: 50px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   border: solid 1.5px;
   border-color: var(--primary-accent-color);
   background-color: transparent;
+  transition: border-color 0.1s ease-in-out, border-width 0.1s ease-in-out;
+  transform: translateX(-150px);
+  animation: slideLeft 1s;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .svgScrollArrow {
