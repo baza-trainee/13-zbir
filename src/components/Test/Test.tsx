@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import style from './Test.module.scss';
 // import ReusableButton from '../ReusableBtn/ReusableBtn';
-import ScrollUpBtn from '../ScrollUpBtn/ScrollUpBtn';
 
 const Test: FC = () => {
   return (
@@ -14,7 +13,6 @@ const Test: FC = () => {
         rel="noopener noreferrer"
       />
       <ReusableButton text="Поділитися збором" onClick={() => alert('Hello')} /> */}
-      <ScrollUpBtn />
     </main>
   );
 };

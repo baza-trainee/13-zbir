@@ -3,6 +3,7 @@ import Test from './components/Test/Test';
 import About from './components/About/About';
 import './styles/index.scss';
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
+import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 
 const App: FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: FC = () => {
       <Test />
       <About />
       <ImportantInfo />
+      <ScrollUpBtn />
       <footer>Footer</footer>
     </>
   );
