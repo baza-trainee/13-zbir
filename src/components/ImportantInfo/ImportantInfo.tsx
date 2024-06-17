@@ -7,8 +7,8 @@ const ImportantInfo = () => {
       <h2 className={styles.mainInfoTitle}>ЗБІР</h2>
       <h3 className={styles.infoTitle}>Чому це важливо ?</h3>
       <div className={styles.infoWrapper}>
-        <div>
-          <picture>
+        <div >
+          <picture >
             <source
               media="(min-width: 1440px)"
               type="image/webp"
@@ -29,7 +29,7 @@ const ImportantInfo = () => {
               type="image/png"
               srcSet={`${soldierImages.mobile.png.src} 1x, ${soldierImages.mobile.png.src2x} 2x`}
             />
-            <img src={soldierImages.mobile.png.src} alt="soldier" />
+            <img className={styles.imgWrapper} src={soldierImages.mobile.png.src} alt="soldier" />
           </picture>
         </div>
         <div>
