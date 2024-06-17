@@ -54,6 +54,23 @@
     padding: 80px 16px 90px;
   }
 
+  .infoWrapper {
+    column-gap: 69px;
+    flex-direction: row;
+  }
+
+  .desc {
+    // font-size: 16px;
+    max-width: 489px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 80px 220px 90px;
+  }
+
   .mainInfoTitle {
     font-size: 40px;
     letter-spacing: 3.2px;
@@ -65,20 +82,7 @@
     margin-bottom: 60px;
   }
 
-  .infoWrapper {
-    column-gap: 69px;
-    flex-direction: row;
-  }
-
   .desc {
     font-size: 16px;
-    max-width: 489px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 80px 220px 90px;
   }
 }
