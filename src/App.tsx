@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
+import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 
 const App: FC = () => {
   return (

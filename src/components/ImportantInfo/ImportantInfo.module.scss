@@ -32,7 +32,13 @@
 .infoWrapper {
   display: flex;
   row-gap: 36px;
+  justify-content: space-between;
   flex-direction: column;
+}
+
+.imgWrapper {
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (min-width: 375px) {
@@ -48,6 +54,22 @@
     padding: 80px 16px 90px;
   }
 
+  .infoWrapper {
+    column-gap: 69px;
+    flex-direction: row;
+  }
+
+  .desc {
+    max-width: 489px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 80px 220px 90px;
+  }
+
   .mainInfoTitle {
     font-size: 40px;
     letter-spacing: 3.2px;
@@ -59,21 +81,7 @@
     margin-bottom: 60px;
   }
 
-  .infoWrapper {
-    display: flex;
-    column-gap: 69px;
-    flex-direction: row;
-  }
-
   .desc {
     font-size: 16px;
-    max-width: 489px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1400px;
-    padding: 80px 220px 90px;
   }
 }
