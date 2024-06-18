@@ -7,6 +7,8 @@ const Test: FC = () => {
   return (
     <main>
       <div className={style.test}>Test</div>
+<<<<<<< HEAD
+=======
       {/* <ReusableButton
         text="Задонатити"
         href="url"
@@ -15,6 +17,7 @@ const Test: FC = () => {
       />
       <ReusableButton text="Поділитися збором" onClick={() => alert('Hello')} /> */}
       <ScrollUpBtn />
+>>>>>>> develop
     </main>
   );
 };
