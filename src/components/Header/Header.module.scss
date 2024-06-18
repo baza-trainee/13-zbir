@@ -1,0 +1,124 @@
+.header {
+    margin: 40px 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin: 40px 16px;
+        gap: 14px;
+    }
+
+    &__logo {
+        width: auto;
+        height: auto;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        nav {
+            display: flex;
+            width: auto;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 118px;
+            flex-shrink: 0;
+
+            a {
+                cursor: pointer;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.72px;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            &.is-open {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+           &.is-open nav {
+              display: flex;
+              background-color: #FFFDF9;
+              z-index: 9999;
+           } 
+        }
+
+        
+
+        hr {
+            border: 3px solid #E7A515;
+            width: 100%;
+            border-radius: 2px;
+            margin: 0;
+
+            @media screen and (max-width: 768px) {
+                width: 80%;
+            }
+        }
+
+        &_mobile {
+            display: none;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__mobile_nav {
+        display: none;
+
+        
+        @media screen and (max-width: 768px) {
+            margin: 0px 90px;
+            display: flex;
+            padding: 28px 32px;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 8rem;
+            width: 70%;
+            background-color: #FFFDF9;
+            z-index: 999;
+            box-shadow: 0 2px 78px rgba(154, 153, 129, 0.5);
+            &_hiden {
+                display: none;
+            }
+        }
+
+        &_hiden {
+            display: none;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        
+    }
+}
