@@ -1,17 +1,20 @@
-import { FC } from 'react';
-import About from './components/About/About';
-import './styles/index.scss';
+import { FC } from "react";
+import Header from "./components/Header/Header";
+import "./styles/index.scss";
+import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 
 const App: FC = () => {
   return (
     <>
-      <header className="container">Header</header>
+      <Header/>
+      <Hero/>
       <About />
       <ImportantInfo />
-      <ScrollUpBtn />
-      <footer>Footer</footer>
+      <Footer/>
     </>
   );
 };
