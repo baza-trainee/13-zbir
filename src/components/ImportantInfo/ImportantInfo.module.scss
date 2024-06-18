@@ -22,11 +22,12 @@
   color: var(--secondary-dark-color);
 }
 
-.desc {
+.descInfo {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.8;
   color: var(--secondary-dark-color);
+  text-align: left;
 }
 
 .infoWrapper {
@@ -59,7 +60,7 @@
     flex-direction: row;
   }
 
-  .desc {
+  .descInfo {
     max-width: 489px;
   }
 }
@@ -81,7 +82,7 @@
     margin-bottom: 60px;
   }
 
-  .desc {
+  .descInfo {
     font-size: 16px;
   }
 }
