@@ -1,3 +1,4 @@
+import sprite from "../../assets/images/sprite.svg";
 import styles from "./HowItWorks.module.scss";
 
 const HowItWorks = () => {
@@ -14,7 +15,12 @@ const HowItWorks = () => {
                     </span>
                 </div>
 
-                <span className={styles.arrow}></span>
+                <span className={styles.arrowContainer}>
+                    <svg className={styles.arrow}>
+                        <use href={sprite + '#icon-arrow_first'}></use>
+
+                    </svg>
+                </span>
 
                 <div className={styles.step}>
                     <span className={styles.stepNumber}>
@@ -25,7 +31,12 @@ const HowItWorks = () => {
                     </span>
                 </div>
 
-                <span className={styles.arrow}></span>
+                <span className={styles.arrowContainer}>
+                    <svg className={styles.arrow}>
+                        <use href={sprite + '#icon-arrow_second'}></use>
+
+                    </svg>
+                </span>
 
                 <div className={styles.step}>
                     <span className={styles.stepNumber}>
