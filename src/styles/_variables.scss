@@ -1,4 +1,9 @@
 :root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  min-height: 100vh;
+
   /* accent colors */
   --primary-accent-color: #e7a515;
   --secondary-accent-color: rgba(231, 165, 21, 0.2);
@@ -14,4 +19,8 @@
   --primary-dark-color: #000;
   --secondary-dark-color: #232121;
   --light-color: #fff;
+
+
+  /* button color */
+  --button-color: #E7A515;
 }
