@@ -3,10 +3,10 @@ import sprite from '../../assets/images/sprite.svg';
 import styles from './ScrollUpBtn.module.scss';
 
 const ScrollUpBtn = () => {
-  const [showBtn, setShowBtn] = useState(true);
+  const [showBtn, setShowBtn] = useState(false);
 
   const onScroll = () => {
-    window.scrollY > 1930 ? setShowBtn(true) : setShowBtn(false);
+    window.scrollY > 500 ? setShowBtn(true) : setShowBtn(false);
   };
 
   useEffect(() => {
