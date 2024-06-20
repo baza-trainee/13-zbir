@@ -2,9 +2,14 @@
 @import './fonts';
 @import './variables';
 
+#root {
+  background-color: #fffdf9;
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
+  background-color: #fffdf9;
 }
 
 body {

@@ -5,7 +5,7 @@ const Progress = () => {
   const [progress, setProgress] = useState(0);
 
   return (
-    <section className={style.container}>
+    <section className={style.container} >
       <h2 className={style.progressTitle}>
         Підтримай наших героїв - разом для перемоги!
       </h2>
