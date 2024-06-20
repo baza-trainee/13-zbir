@@ -7,33 +7,36 @@ const ImportantInfo = () => {
       <h2 className={styles.mainInfoTitle}>ЗБІР</h2>
       <h3 className={styles.infoTitle}>Чому це важливо ?</h3>
       <div className={styles.infoWrapper}>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcSet={`${soldierImages.desktop.webp.src} 1x, ${soldierImages.desktop.webp.src2x} 2x`}
+          />
+          <source
+            media="(min-width: 768px)"
+            type="image/png"
+            srcSet={`${soldierImages.desktop.png.src} 1x, ${soldierImages.desktop.png.src2x} 2x`}
+          />
+          <source
+            media="(min-width: 320px)"
+            type="image/webp"
+            srcSet={`${soldierImages.mobile.webp.src} 1x, ${soldierImages.mobile.webp.src2x} 2x`}
+          />
+          <source
+            media="(min-width: 320px)"
+            type="image/png"
+            srcSet={`${soldierImages.mobile.png.src} 1x, ${soldierImages.mobile.png.src2x} 2x`}
+          />
+          <img
+            className={styles.imgWrapper}
+            src={soldierImages.mobile.png.src}
+            alt="soldier"
+          />
+        </picture>
+
         <div>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              type="image/webp"
-              srcSet={`${soldierImages.desktop.webp.src} 1x, ${soldierImages.desktop.webp.src2x} 2x`}
-            />
-            <source
-              media="(min-width: 1440px)"
-              type="image/png"
-              srcSet={`${soldierImages.desktop.png.src} 1x, ${soldierImages.desktop.png.src2x} 2x`}
-            />
-            <source
-              media="(min-width: 320px)"
-              type="image/webp"
-              srcSet={`${soldierImages.mobile.webp.src} 1x, ${soldierImages.mobile.webp.src2x} 2x`}
-            />
-            <source
-              media="(min-width: 320px)"
-              type="image/png"
-              srcSet={`${soldierImages.mobile.png.src} 1x, ${soldierImages.mobile.png.src2x} 2x`}
-            />
-            <img src={soldierImages.mobile.png.src} alt="soldier" />
-          </picture>
-        </div>
-        <div>
-          <p className={styles.desc}>
+          <p className={styles.descInfo}>
             Сучасні війни ведуться не тільки на полі бою, але й в електронному
             просторі, де перевага в інформації може вирішити долю битви.
             Радіоелектронна боротьба (РЕБ) дозволяє придушити ворожі комунікації
