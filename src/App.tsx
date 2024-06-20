@@ -7,6 +7,7 @@ import About from './components/About/About';
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import Progress from './components/Progress/Progress';
+import CallShare from './components/CallShare/CallShare';
 
 const App: FC = () => {
   return (
@@ -15,9 +16,10 @@ const App: FC = () => {
       <Hero />
       <Progress />
       <About />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <ScrollUpBtn />
       <ImportantInfo />
+      <CallShare/>
       <footer>Footer</footer>
     </>
   );
