@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import dagger from '../../assets/images/dagger.svg';
+import ReusableBtn from '../ReusableBtn/ReusableBtn';
 import sprite from '../../assets/images/sprite.svg';
 import styles from './ShareModal.module.scss';
 
@@ -25,24 +25,27 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <button
+        
+        <ReusableBtn
+          text="Поділитись у Facebook"
+          type="button"
           className={styles.shareButton}
           style={{ backgroundColor: 'var(--facebook-button-color)' }}
-        >
-          Поділитись у Facebook
-        </button>
-        <button
+        />
+
+        <ReusableBtn
+          text="Поділитись у Linkedin"
+          type="button"
           className={styles.shareButton}
           style={{ backgroundColor: 'var(--linkedin-button-color)' }}
-        >
-          Поділитись у Linkedin
-        </button>
-        <button
+        />
+
+        <ReusableBtn
+          text="Поділитись у Viber"
+          type="button"
           className={styles.shareButton}
           style={{ backgroundColor: 'var(--viber-button-color)' }}
-        >
-          Поділитись у Viber
-        </button>
+        />
 
         <button
           onClick={onClose}
@@ -50,10 +53,10 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           aria-label="Закрити модальне вікно"
         >
           <svg className={styles.svgClose}>
-            <use href={sprite + '#icon-dagger'} ></use>
+            <use href={sprite + '#icon-dagger'}></use>
           </svg>
           <svg className={styles.svgCloseDesktop}>
-            <use href={sprite + '#icon-dagger-desktop'} ></use>
+            <use href={sprite + '#icon-dagger-desktop'}></use>
           </svg>
         </button>
       </div>
