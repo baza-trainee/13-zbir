@@ -4,7 +4,7 @@ import styles from "./About.module.scss";
 
 const About = () => {
     return (
-        <section className={`${styles.wrapper} container`}>
+        <section className={`${styles.wrapper} container`} id="crew">
             <p className={styles.title}>батальйон</p>
             <div className={styles.contant}>
                 <div className={styles.info}>

@@ -4,7 +4,6 @@ import './styles/index.scss';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
-import './styles/index.scss';
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import Progress from './components/Progress/Progress';
@@ -16,6 +15,7 @@ const App: FC = () => {
       <Hero />
       <Progress />
       <About />
+      <HowItWorks />
       <ScrollUpBtn />
       <ImportantInfo />
       <footer>Footer</footer>
