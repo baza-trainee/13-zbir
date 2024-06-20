@@ -6,15 +6,16 @@
   padding: 0 16px;
   @media screen and (min-width: 375px) {
     width: 375px;
+    padding: 0 16px;
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 80px 16px 90px;
+    padding: 0 80px ;
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
-    padding: 80px 220px 90px;
+    padding: 0 459px;
   }
 }
 
