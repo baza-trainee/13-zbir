@@ -1,0 +1,80 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 300px;
+  height: 300px;
+
+  @media screen and (min-width: 767px) {
+    width: 1024px;
+    height: 510px;
+  }
+}
+
+.shareButton {
+  border: none;
+  width: 236px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  color: var(--Button-text, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  @media screen and (min-width: 767px) {
+    font-size: 24px;
+    width: 352px;
+  }
+}
+
+.closeButton {
+  right: 16px;
+  top: 16px;
+  width: 26px;
+  height: 26px;
+  background: none;
+  border: none;
+  position: absolute;
+  padding: 0;
+  @media screen and (min-width: 767px) {
+    right: 28px;
+    top: 28px;
+  }
+}
+
+.svgClose {
+  width: 20px;
+  height: 20px;
+  stroke: var(--secondary-dark-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.svgCloseDesktop {
+  width: 40px;
+  height: 40px;
+  stroke: var(--secondary-dark-color);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
