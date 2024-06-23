@@ -1,3 +1,21 @@
+@mixin stepText {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--secondary-dark-color);
+  letter-spacing: 2px;
+  font-style: normal;
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  white-space: nowrap;
+  z-index: 10;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    position: relative;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -48,6 +66,24 @@
     }
   }
 
+  .step1 {
+    @media screen and (min-width: 1200px) {
+      width: 175px;
+    }
+  }
+
+  .step2 {
+    @media screen and (min-width: 1200px) {
+      width: 213px;
+    }
+  }
+
+  .step3 {
+    @media screen and (min-width: 1200px) {
+      width: 281px;
+    }
+  }
+
   .stepNumber {
     font-size: 128px;
     color: var(--numbers-accent-color);
@@ -57,24 +93,6 @@
     text-align: center;
     @media screen and (min-width: 1200px) {
       font-size: 150px;
-    }
-  }
-
-  @mixin stepText {
-    font-size: 20px;
-    line-height: 140%;
-    font-weight: 500;
-    color: var(--secondary-dark-color);
-    letter-spacing: 2px;
-    font-style: normal;
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    white-space: nowrap;
-    z-index: 10;
-    @media screen and (min-width: 1200px) {
-      font-size: 24px;
-      position: relative;
     }
   }
 

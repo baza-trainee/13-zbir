@@ -6,7 +6,7 @@ const HowItWorks = () => {
         <section className={`${styles.wrapper} container`}>
             <p className={styles.title}>як це працюЄ</p>
             <div className={styles.infoContainer}>
-                <div className={styles.step}>
+                <div className={styles.step + ' ' + styles.step1}>
                     <span className={styles.stepNumber}>
                         1
                     </span>
@@ -21,7 +21,7 @@ const HowItWorks = () => {
                     </svg>
                 </div>
 
-                <div className={styles.step}>
+                <div className={styles.step + ' ' + styles.step2}>
                     <span className={styles.stepNumber}>
                         2
                     </span>
@@ -36,7 +36,7 @@ const HowItWorks = () => {
                     </svg>
                 </div>
 
-                <div className={styles.step}>
+                <div className={styles.step + ' ' + styles.step3}>
                     <span className={styles.stepNumber}>
                         3
                     </span>
