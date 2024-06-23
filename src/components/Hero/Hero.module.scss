@@ -5,7 +5,7 @@
         padding: 40px 16px;
     }
 
-    h1 {
+    &__title {
         text-align: center;
        font-size: 40px;
        font-style: normal;
@@ -47,10 +47,10 @@
             flex-direction: column;
             gap: 48px;
 
-            h1 {
+            &__title {
                 font-size: 24px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 line-height: 140%; /* 33.6px */
                 letter-spacing: 1.92px;
                 padding: 0;
@@ -60,7 +60,7 @@
                 }
             }
 
-            h3 {
+            &__subtitle {
                 font-size: 40px;
                 font-style: normal;
                 font-weight: 700;
