@@ -24,6 +24,7 @@
         display: flex;
         flex-direction: column;
         justify-content: start;
+        align-items: center;
         padding: 0 16px; //delete, if will be container for mobile version
         margin-bottom: 36px;
         @media screen and (min-width: 1200px) {
@@ -41,27 +42,33 @@
         font-style: normal;
         font-weight: 400;
         line-height: 180%; /* 25.2px */
-        margin-bottom: 0;
         @media screen and (min-width: 1200px) {
             font-size: 16px;
             color: var(--secondary-dark-color);
             max-width: 488px;
-            margin-bottom: 58px;
+        }
+
+        .p {
+            margin-bottom: 0.5rem;
         }
     }
-
+    
     .picture {
         flex: 0 0 340px;
-        background-image: url("./image/soldars-1x.jpg");
+        background-image: url("./image/Soldiers-1x.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         //object-fit: cover;
         margin-top: 36px;
+        width: 339px;
+        height: 356px;
         @media screen and (min-width: 1200px) {
             flex: 0 0 451px;
-            background-image: url("./image/soldars-2x.jpg");
+            background-image: url("./image/Soldiers-2x.png");
             margin-top: 0px;
+            width: 451px;
+            height: 474px;
         }
 
     }

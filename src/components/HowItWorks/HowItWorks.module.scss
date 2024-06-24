@@ -1,0 +1,137 @@
+@mixin stepText {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--secondary-dark-color);
+  letter-spacing: 2px;
+  font-style: normal;
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  white-space: nowrap;
+  z-index: 10;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    position: relative;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: var(--primary-dark-color);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+      letter-spacing: 3.2px;
+      color: var(--secondary-dark-color);
+      margin-bottom: 60px;
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      gap: 0;
+      width: 100%;
+    }
+  }
+
+  .step {
+    left: -45px;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .step1 {
+    @media screen and (min-width: 1200px) {
+      width: 175px;
+    }
+  }
+
+  .step2 {
+    @media screen and (min-width: 1200px) {
+      width: 213px;
+    }
+  }
+
+  .step3 {
+    @media screen and (min-width: 1200px) {
+      width: 281px;
+    }
+  }
+
+  .stepNumber {
+    font-size: 128px;
+    color: var(--numbers-accent-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 90%;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 150px;
+    }
+  }
+
+  .stepText1 {
+    @include stepText;
+    @media screen and (min-width: 1200px) {
+      left: -27px;
+      bottom: 12px;
+    }
+  }
+
+  .stepText2 {
+    @include stepText;
+    @media screen and (min-width: 1200px) {
+      left: -50px;
+      bottom: 12px;
+    }
+  }
+
+  .stepText3 {
+    @include stepText;
+    @media screen and (min-width: 1200px) {
+      left: -43px;
+      bottom: 12px;
+    }
+  }
+
+  .arrowContainer {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .arrow {
+    width: 105px;
+    height: 18px;
+    padding: 0 32px;
+  }
+}

@@ -4,9 +4,11 @@ import './styles/index.scss';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
+import HowItWorks from "./components/HowItWorks/HowItWorks";
 import ImportantInfo from './components/ImportantInfo/ImportantInfo';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import Progress from './components/Progress/Progress';
+import CallShare from './components/CallShare/CallShare';
 
 const App: FC = () => {
   return (
@@ -15,9 +17,11 @@ const App: FC = () => {
       <Hero />
       <Progress />
       <About />
+      <HowItWorks />
       <ScrollUpBtn />
       <ImportantInfo />
-      <Footer />
+      <CallShare/>
+      <footer>Footer</footer>
     </>
   );
 };

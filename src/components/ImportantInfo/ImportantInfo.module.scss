@@ -30,6 +30,10 @@
   text-align: left;
 }
 
+.devider {
+  margin-bottom: 10px;
+}
+
 .infoWrapper {
   display: flex;
   row-gap: 36px;
@@ -61,14 +65,13 @@
   }
 
   .descInfo {
-    max-width: 489px;
+    max-width: 489px; 
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 80px 220px 90px;
+@media screen and (min-width: 1024px) {
+  .descInfo { 
+    font-size: 16px;
   }
 
   .mainInfoTitle {
@@ -81,8 +84,11 @@
     letter-spacing: 1.92px;
     margin-bottom: 60px;
   }
+}
 
-  .descInfo {
-    font-size: 16px;
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 80px 220px 90px;
   }
 }
