@@ -1,7 +1,5 @@
-import React from 'react'
 import styles from './Hero.module.scss'
 import MainImg from '../img/REB.svg'
-import ReusableButton from '../ReusableButton/ReusableButton'
 import ReusableBtn from '../ReusableBtn/ReusableBtn'
 
 export default function Hero() {
