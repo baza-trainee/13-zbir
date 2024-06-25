@@ -1,11 +1,12 @@
+import { FC } from 'react';
 import soldierImages from '../../assets/images/importantInfoSection/imageImports';
 import styles from './ImportantInfo.module.scss';
 
-const ImportantInfo = () => {
+const ImportantInfo: FC = () => {
   return (
-    <section className={styles.container} id="#collection">
+    <section className={`${styles.sectionWrapper} container`} id="collection">
       <h2 className={styles.mainInfoTitle}>ЗБІР</h2>
-      <h3 className={styles.infoTitle}>Чому це важливо ?</h3>
+      <p className={styles.infoTitle}>Чому це важливо ?</p>
       <div className={styles.infoWrapper}>
         <picture>
           <source
@@ -39,8 +40,8 @@ const ImportantInfo = () => {
           <p className={`${styles.descInfo} ${styles.devider}`}>
             Сучасні війни ведуться не тільки на полі бою, але й в електронному
             просторі, де перевага в інформації може вирішити долю битви.
-            Радіоелектронна боротьба (РЕБ) дозволяє придушити ворожі комунікації та засоби
-            навігації, що значно послаблює противника.
+            Радіоелектронна боротьба (РЕБ) дозволяє придушити ворожі комунікації
+            та засоби навігації, що значно послаблює противника.
           </p>
           <p className={styles.descInfo}>
             Забезпечення наших військових РЕБ системами підвищить їхню безпеку

@@ -1,35 +1,31 @@
-// components/CallShare.tsx
-
-import { useState } from 'react';
-import styles from './CallShare.module.scss';
-import ShareModal from '../ShareModal/ShareModal';
+import { FC, useState } from 'react';
+import ShareModal from './ShareModal/ShareModal';
 import ReusableBtn from '../ReusableBtn/ReusableBtn';
+import styles from './CallShare.module.scss';
+import '../../styles/index.scss';
 
-const CallShare: React.FC = () => {
+const CallShare: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
-    <section className={styles.container}>
-      <div className={styles.paragraphContainer}>
-        <p className={styles.mobileParagraph}>Будемо вдячні кожному <br/> за  підтримку та <br /> поширення збору!</p>
-        <p className={styles.desktopParagraph}>Будемо вдячні кожному за <br />  підтримку та поширення збору!</p>
-        <p className={styles.gloryUkr}>Слава Україні!</p>
+    <section className={`${styles.sectionWrapper} container`}>
+      <p className={styles.mobileParagraph}>
+        Будемо вдячні кожному за підтримку та поширення збору!
+      </p>
+      <p className={styles.gloryUkr}>Слава Україні!</p>
+      <div className={styles.buttonWrapper}>
+        <ReusableBtn
+          text="Поділитися збором"
+          type="button"
+          onClick={openModal}
+        />
       </div>
-      <ReusableBtn
-      text='Поділитися збором'
-      type='button'
-      onClick={openModal}
-      />
-      
-      <ShareModal isOpen={isModalOpen} onClose={closeModal} />
+
+      <ShareModal isOpen={isModalOpen} onClose={openModal} />
     </section>
   );
 };

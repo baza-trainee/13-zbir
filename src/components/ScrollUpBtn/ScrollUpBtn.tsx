@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import sprite from '../../assets/images/sprite.svg';
 import styles from './ScrollUpBtn.module.scss';
 
-const ScrollUpBtn = () => {
+const ScrollUpBtn: FC = () => {
   const [showBtn, setShowBtn] = useState(false);
 
   const onScroll = () => {

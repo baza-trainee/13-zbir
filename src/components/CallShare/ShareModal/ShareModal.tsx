@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import ReusableBtn from '../ReusableBtn/ReusableBtn';
-import sprite from '../../assets/images/sprite.svg';
+import { FC, useEffect } from 'react';
+import ReusableBtn from '../../ReusableBtn/ReusableBtn';
+import sprite from '../../../assets/images/sprite.svg';
 import styles from './ShareModal.module.scss';
 
 type ShareModalProps = {
@@ -8,7 +8,7 @@ type ShareModalProps = {
   onClose: () => void;
 };
 
-const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
+const ShareModal: FC<ShareModalProps> = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -25,7 +25,6 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        
         <ReusableBtn
           text="Поділитись у Facebook"
           type="button"

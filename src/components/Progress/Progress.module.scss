@@ -1,14 +1,18 @@
-.container {
-  padding: 0 16px 60px;
+@use '../../styles/variables';
+
+.sectonWrapper {
+  padding-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 78px;
+  }
 }
 
 .progressTitle {
-  font-size: 16px;
-  font-weight: 500;
+  margin-bottom: 20px;
   line-height: 1.4;
   letter-spacing: 1.28px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .progressInfoWrapper {
@@ -18,15 +22,12 @@
 }
 
 .desc {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: var(--fs-text);
   line-height: 1.8;
   text-align: center;
 }
 
 .descBalance {
-  font-size: 16px;
-  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 1.28px;
 }
@@ -39,29 +40,14 @@
 }
 
 .progressBar {
+  height: 100%;
   min-width: 8px;
   background-color: var(--primary-accent-color);
-  height: 100%;
   border-radius: 12px 0px 0px 12px;
-}
-
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 80px 16px 71px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .desc {
-    font-size: 16px;
     margin-bottom: 8px;
   }
 
@@ -72,7 +58,7 @@
   }
 
   .descBalance {
-    font-size: 24px;
+    font-size: var(--fs-accent-laptop);
     letter-spacing: 1.92px;
   }
 
@@ -87,11 +73,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 80px 220px 71px;
-  }
-
   .desc {
     margin-bottom: 16px;
   }

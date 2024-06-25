@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import { ReusableBtnProps } from '../../types/ReusableBtnProps';
 import styles from './ReusableBtn.module.scss';
 
-const ReusableBtn: React.FC<ReusableBtnProps> = ({
+const ReusableBtn: FC<ReusableBtnProps> = ({
   text,
   href,
   target,
@@ -16,14 +17,14 @@ const ReusableBtn: React.FC<ReusableBtnProps> = ({
     return (
       <div className={className}>
         <a href={href} target={target} rel={rel} {...props}>
-          {text}
+          <p>{text}</p>
         </a>
       </div>
     );
   }
   return (
     <button type={type} onClick={onClick} className={className} {...props}>
-      {text}
+      <p>{text}</p>
     </button>
   );
 };
