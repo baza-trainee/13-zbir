@@ -7,7 +7,7 @@
                 <path d="M1.75 12C32.2133 7.98134 63.6761 17.2169 93.6765 5" stroke="#232121" stroke-width="2" stroke-linecap="round"/>
                 <path d="M82.8076 1.35913C84.992 1.41314 101.966 2.84838 101.748 3.34571C99.6541 8.12866 93.2122 10.4475 90.3211 14.6408" stroke="#232121" stroke-width="2" stroke-linecap="round"/>
         </symbol>
-        <symbol id="icon-arrow_second" width="103" height="18" viewBox="0 0 103 18"  fill="none">
+        <symbol id="icon-arrow_second" viewBox="0 0 103 18"  fill="none">
                 <path d="M1.25 13.5131C34.1502 13.5131 66.6156 11.0983 99.3818 5.51306" stroke="#232121" stroke-width="2" stroke-linecap="round"/>
                 <path d="M81.2681 1.33752C87.4671 1.63833 93.9918 2.46234 100.094 3.6079C106.749 4.85702 82.5528 16.008 81.2681 16.6626" stroke="#232121" stroke-width="2" stroke-linecap="round"/>
         </symbol>

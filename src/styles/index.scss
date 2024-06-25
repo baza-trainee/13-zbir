@@ -9,7 +9,6 @@ html {
 
 body {
   font-family: var(--primary-font);
-  font-weight: 400;
   background-color: var(--background-color);
   min-height: 100vh;
 }
@@ -17,4 +16,6 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1000px;
+  padding-left: 16px;
+  padding-right: 16px;
 }

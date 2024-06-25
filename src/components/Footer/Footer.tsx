@@ -1,16 +1,16 @@
-import styles from './Footer.module.scss'
-import ReusableBtn from '../ReusableBtn/ReusableBtn'
+import { FC } from 'react';
+import styles from './Footer.module.scss';
 
-export default function Footer() {
+const Footer: FC = () => {
   return (
     <>
-      <div className={styles.footer} id='collection'>
-        <h1 className={styles.footer__title}>Будемо вдячні кожному за підтримку та поширення збору!</h1>
-        <h1 className={styles.footer__title}>Слава Україні!</h1>
-        <ReusableBtn text='Поділитися збором' />
-      </div>
-      <p className={styles.desc}>Розробка Baza Trainee Ukraine 2024. Всі права захищені.</p>
+      <footer className={`${styles.footer} container`}>
+        <p className={styles.desc}>
+          Розробка Baza Trainee Ukraine 2024. Всі права захищені.
+        </p>
+      </footer>
     </>
-    
-  )
-}
+  );
+};
+
+export default Footer;
