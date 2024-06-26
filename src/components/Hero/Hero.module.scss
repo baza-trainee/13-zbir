@@ -36,7 +36,7 @@
             width: auto;
 
             @media screen and (max-width: 768px) {
-                width: 70%;
+                width: 100%;
             }
         }
 
@@ -54,6 +54,7 @@
                 line-height: 140%; /* 33.6px */
                 letter-spacing: 1.92px;
                 padding: 0;
+                text-align: center;
 
                 @media screen and (max-width: 768px) {
                     font-size: 16px;
