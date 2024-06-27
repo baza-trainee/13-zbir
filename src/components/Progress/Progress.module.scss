@@ -1,18 +1,28 @@
 @use '../../styles/variables';
 
-.sectonWrapper {
+.sectionWrapper {
   padding-top: 40px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 78px;
+    padding-top: 80px;
   }
 }
 
-.progressTitle {
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
+}
+
+.progressTitle {
+  font-size: var(--fs-mobile);
+  font-weight: 500;
   line-height: 1.4;
-  letter-spacing: 1.28px;
+  letter-spacing: 0.08em;
+  max-width: 300px;
   text-align: center;
+  color: var( --secondary-dark-color)
 }
 
 .progressInfoWrapper {
@@ -21,15 +31,26 @@
   margin-bottom: 16px;
 }
 
+.progressBalanceWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
 .desc {
   font-size: var(--fs-text);
   line-height: 1.8;
   text-align: center;
+  color: var( --secondary-dark-color)
 }
 
 .descBalance {
+  font-size: var(--fs-mobile);
   line-height: 1.4;
-  letter-spacing: 1.28px;
+  letter-spacing: 0.08em;
+  color: var( --secondary-dark-color)
 }
 
 .progressWrapper {
@@ -51,15 +72,25 @@
     margin-bottom: 8px;
   }
 
+  .titleWrapper{
+    margin-bottom: 0;
+  }
+
   .progressTitle {
-    font-size: 32px;
-    letter-spacing: 2.56px;
+    font-size: var(--fs-desktop);
+    font-weight: 500;
+    letter-spacing: 0.08em;
     margin-bottom: 60px;
+    max-width: 1000px;
+  }
+
+  .progressBalanceWrapper{
+    gap: 16px;
   }
 
   .descBalance {
     font-size: var(--fs-accent-laptop);
-    letter-spacing: 1.92px;
+    letter-spacing: 0.08em;
   }
 
   .progressInfoWrapper {
