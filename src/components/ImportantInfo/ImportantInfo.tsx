@@ -37,7 +37,7 @@ const ImportantInfo: FC = () => {
         </picture>
 
         <div className={styles.textWrapper}>
-          <p className={`${styles.descInfo} ${styles.devider}`}>
+          <p className={styles.descInfo}>
             Сучасні війни ведуться не тільки на полі бою, але й в електронному
             просторі, де перевага в інформації може вирішити долю битви.
             Радіоелектронна боротьба (РЕБ) дозволяє придушити ворожі комунікації
