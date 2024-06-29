@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 25.2px */
-    letter-spacing: 1.44px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
@@ -59,7 +59,7 @@
   }
 
   .step {
-    left: -45px;
+    left: -55px;
     position: relative;
     @media screen and (min-width: 1200px) {
       width: 100%;
