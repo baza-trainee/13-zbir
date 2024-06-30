@@ -4,8 +4,8 @@
   padding-top: 60px;
   padding-bottom: 90px;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 123px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 80px;
   }
 }
 
@@ -28,16 +28,19 @@
   color: var(--secondary-dark-color);
 }
 
+.textWrapper {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
 .descInfo {
   font-weight: 400;
   font-size: var(--fs-text);
   line-height: 1.8;
   color: var(--secondary-dark-color);
   text-align: left;
-}
-
-.devider {
-  margin-bottom: 10px;
+  max-width: 342px;
 }
 
 .infoWrapper {
@@ -66,6 +69,7 @@
 @media screen and (min-width: 1024px) {
   .descInfo {
     font-size: 16px;
+    max-width: 430px;
   }
 
   .mainInfoTitle {
@@ -78,4 +82,6 @@
     letter-spacing: 1.92px;
     margin-bottom: 60px;
   }
+
+  
 }
