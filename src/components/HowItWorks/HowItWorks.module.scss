@@ -1,5 +1,7 @@
+@use '../../styles/variables';
+
 @mixin stepText {
-  font-size: 20px;
+  font-size: var(--fs-accent);
   line-height: 140%;
   font-weight: 500;
   color: var(--secondary-dark-color);
@@ -9,9 +11,9 @@
   bottom: 10px;
   left: 25px;
   white-space: nowrap;
-  z-index: 10;
+  z-index: -1;
   @media screen and (min-width: 1200px) {
-    font-size: 24px;
+    font-size: var(--fs-accent-laptop);
     position: relative;
   }
 }
@@ -20,23 +22,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  padding-top: 60px;
   @media screen and (min-width: 1200px) {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .title {
-    font-size: 18px;
+    font-size: var(--fs-headline);
     color: var(--primary-dark-color);
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 25.2px */
-    letter-spacing: 1.44px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
-    @media screen and (min-width: 1200px) {
-      font-size: 40px;
+    @media screen and (min-width: 1000px) {
+      font-size: var(--fs-headline-laptop);
       letter-spacing: 3.2px;
       color: var(--secondary-dark-color);
       margin-bottom: 60px;
@@ -53,12 +55,11 @@
       justify-content: space-around;
       padding: 0;
       gap: 0;
-      width: 100%;
     }
   }
 
   .step {
-    left: -45px;
+    left: -55px;
     position: relative;
     @media screen and (min-width: 1200px) {
       width: 100%;
@@ -85,12 +86,14 @@
   }
 
   .stepNumber {
+    position: relative;
     font-size: 128px;
     color: var(--numbers-accent-color);
     text-align: center;
     font-weight: 600;
     line-height: 90%;
     text-align: center;
+    z-index: -1;
     @media screen and (min-width: 1200px) {
       font-size: 150px;
     }
@@ -132,6 +135,6 @@
   .arrow {
     width: 105px;
     height: 18px;
-    padding: 0 32px;
+    padding: 0 20px;
   }
 }

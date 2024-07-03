@@ -1,9 +1,16 @@
-.container {
-  padding: 60px 16px 90px;
+@use '../../styles/variables';
+
+.sectionWrapper {
+  padding-top: 60px;
+  padding-bottom: 90px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 80px;
+  }
 }
 
 .mainInfoTitle {
-  font-size: 18px;
+  font-size: var(--fs-headline);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 1.44px;
@@ -13,7 +20,6 @@
 }
 
 .infoTitle {
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 1.28px;
@@ -22,16 +28,19 @@
   color: var(--secondary-dark-color);
 }
 
+.textWrapper {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
 .descInfo {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--fs-text);
   line-height: 1.8;
   color: var(--secondary-dark-color);
   text-align: left;
-}
-
-.devider {
-  margin-bottom: 10px;
+  max-width: 342px;
 }
 
 .infoWrapper {
@@ -46,32 +55,21 @@
   width: 100%;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 80px 16px 90px;
-  }
-
   .infoWrapper {
     column-gap: 69px;
     flex-direction: row;
   }
 
   .descInfo {
-    max-width: 489px; 
+    max-width: 489px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .descInfo { 
+  .descInfo {
     font-size: 16px;
+    max-width: 430px;
   }
 
   .mainInfoTitle {
@@ -84,11 +82,6 @@
     letter-spacing: 1.92px;
     margin-bottom: 60px;
   }
-}
 
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 80px 220px 90px;
-  }
+  
 }
