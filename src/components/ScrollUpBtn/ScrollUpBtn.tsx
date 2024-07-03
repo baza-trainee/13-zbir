@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from 'react';
-import sprite from '../../assets/images/sprite.svg';
 import styles from './ScrollUpBtn.module.scss';
 
 const ScrollUpBtn: FC = () => {
@@ -26,7 +25,7 @@ const ScrollUpBtn: FC = () => {
       onClick={scrollToTop}
     >
       <svg className={styles.svgScrollArrow}>
-        <use href={sprite + '#icon-arrow-up'}></use>
+        <use href="image/sprite.svg#icon-arrow-up"></use>
       </svg>
     </button>
   );

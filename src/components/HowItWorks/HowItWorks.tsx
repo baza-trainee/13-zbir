@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import sprite from '../../assets/images/sprite.svg';
 import styles from './HowItWorks.module.scss';
 
 const HowItWorks: FC = () => {
@@ -14,7 +13,7 @@ const HowItWorks: FC = () => {
 
         <div className={styles.arrowContainer}>
           <svg className={styles.arrow}>
-            <use href={sprite + '#icon-arrow_first'}></use>
+            <use href="image/sprite.svg#icon-arrow_first"></use>
           </svg>
         </div>
 
@@ -25,7 +24,7 @@ const HowItWorks: FC = () => {
 
         <div className={styles.arrowContainer}>
           <svg className={styles.arrow}>
-            <use href={sprite + '#icon-arrow_second'}></use>
+            <use href="image/sprite.svg#icon-arrow_second"></use>
           </svg>
         </div>
 
