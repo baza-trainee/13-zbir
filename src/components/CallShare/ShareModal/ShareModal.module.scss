@@ -1,3 +1,5 @@
+@use '../../../styles/variables';
+
 .modalOverlay {
   position: fixed;
   z-index: 2000;
@@ -13,6 +15,7 @@
 }
 
 .modalContent {
+  // font-family: var(--primary-font);
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -38,6 +41,7 @@
   width: 236px;
   padding: 12px 28px;
   border-radius: 12px;
+  font-family: var(--primary-font);
   color: var(--Button-text, #fff);
   font-size: 16px;
   font-weight: 400;

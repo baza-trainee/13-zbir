@@ -9,6 +9,10 @@ const HeaderNav: FC = () => {
   const toggleMenu = () => {
     setIsOpen((isOpen) => !isOpen);
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className={`${styles.header__nav} ${isOpen ? 'is-open' : ''}`}>
       {isOpen && <div className={styles.overlay} onClick={toggleMenu}></div>}
@@ -39,7 +43,11 @@ const HeaderNav: FC = () => {
         {ITEMS_HEADER.map((item) => {
           return (
             <li key={item.id} className={styles.header__mobile_nav_li}>
-              <a href={item.route} className={styles.header__mobile_nav_li_a}>
+              <a
+                href={item.route}
+                className={styles.header__mobile_nav_li_a}
+                onClick={closeMenu}
+              >
                 {item.title}
               </a>
             </li>
