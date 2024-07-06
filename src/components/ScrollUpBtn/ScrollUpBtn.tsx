@@ -5,7 +5,7 @@ const ScrollUpBtn: FC = () => {
   const [showBtn, setShowBtn] = useState(false);
 
   const onScroll = () => {
-    window.scrollY > 1200 ? setShowBtn(true) : setShowBtn(false);
+    window.scrollY > 500 ? setShowBtn(true) : setShowBtn(false);
   };
 
   useEffect(() => {

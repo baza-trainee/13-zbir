@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import ReusableBtn from '../../ReusableBtn/ReusableBtn';
-import sprite from '../../../assets/images/sprite.svg';
+// import sprite from '../../../assets/images/sprite.svg';
 import styles from './ShareModal.module.scss';
 import { ShareModalProps } from '../../../types/ShareModalProps';
-
 
 const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   useEffect(() => {
@@ -23,18 +22,21 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
     window.open(url, '_blank');
   };
 
-  const currentUrl = encodeURIComponent("https://test-deploy-13b.web.app/");
+  const currentUrl = encodeURIComponent('https://test-deploy-13b.web.app/');
 
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-
         <ReusableBtn
           text="Поділитись у Facebook"
           type="button"
           className={styles.shareButton}
           style={{ backgroundColor: 'var(--facebook-button-color)' }}
-          onClick={() => handleShare(`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`)}
+          onClick={() =>
+            handleShare(
+              `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`
+            )
+          }
         />
 
         <ReusableBtn
@@ -42,7 +44,11 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           type="button"
           className={styles.shareButton}
           style={{ backgroundColor: 'var(--linkedin-button-color)' }}
-          onClick={() => handleShare(`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`)}
+          onClick={() =>
+            handleShare(
+              `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`
+            )
+          }
         />
 
         <ReusableBtn
@@ -59,10 +65,10 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           aria-label="Закрити модальне вікно"
         >
           <svg className={styles.svgClose}>
-            <use href={sprite + '#icon-dagger'}></use>
+            <use href="image/sprite.svg#icon-dagger"></use>
           </svg>
           <svg className={styles.svgCloseDesktop}>
-            <use href={sprite + '#icon-dagger-desktop'}></use>
+            <use href="image/sprite.svg#icon-dagger-desktop"></use>
           </svg>
         </button>
       </div>
