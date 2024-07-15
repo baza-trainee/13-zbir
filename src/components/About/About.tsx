@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import ReusableBtn from '../ReusableBtn/ReusableBtn';
+import { JAR_URL } from '../../assets/data/env/env';
 import styles from './About.module.scss';
 
 const About: FC = () => {
@@ -30,7 +31,7 @@ const About: FC = () => {
         <img src="image/Soldiers-2x.png" className={styles.picture}></img>
       </div>
       <div className={styles.buttonContainer}>
-        <ReusableBtn text={'Задонатити'} href={'url'} />
+        <ReusableBtn text={'Задонатити'} href={JAR_URL} />
       </div>
     </section>
   );

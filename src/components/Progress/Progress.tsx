@@ -1,9 +1,14 @@
-// import { FC, useState } from 'react';
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
+import fetchJar from '../../api/fetchJar';
 import style from './Progress.module.scss';
 
 const Progress: FC = () => {
-  // const [progress, setProgress] = useState(0);
+  const [balance, setBalance] = useState(0);
+  const width = balance ? `${(balance / 500).toFixed(1)}%` : '0%';
+
+  useEffect(() => {
+    fetchJar(setBalance);
+  }, []);
 
   return (
     <section className={`${style.sectionWrapper} container`}>
@@ -15,17 +20,15 @@ const Progress: FC = () => {
       <ul className={style.progressInfoWrapper}>
         <li className={style.progressBalanceWrapper}>
           <p className={style.desc}>Зібрано</p>
-          {/* <p className={style.descBalance}>{progress} грн</p> */}
-          <p className={style.descBalance}>0 грн</p>
+          <p className={style.descBalance}>{balance} грн</p>
         </li>
         <li className={style.progressBalanceWrapper}>
           <p className={style.desc}>Ціль збору</p>
-          <p className={style.descBalance}>90 000 грн</p>
+          <p className={style.descBalance}>300 000 грн</p>
         </li>
       </ul>
       <div className={style.progressWrapper}>
-        {/* <div className={style.progressBar} style={{ width: progress }} /> */}
-        <div className={style.progressBar} style={{ width: 0 }} />
+        <div className={style.progressBar} style={{ width: width }}></div>
       </div>
     </section>
   );
