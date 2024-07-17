@@ -5,8 +5,6 @@ import styles from './ReusableBtn.module.scss';
 const ReusableBtn: FC<ReusableBtnProps> = ({
   text,
   href,
-  target,
-  rel,
   type,
   onClick,
   ...props
@@ -16,7 +14,8 @@ const ReusableBtn: FC<ReusableBtnProps> = ({
   if (href) {
     return (
       <div className={className}>
-        <a href={href} target={target} rel={rel} {...props}>
+        <a href={href} target="_blank"
+        rel="noopener noreferrer" {...props}>
           <p>{text}</p>
         </a>
       </div>
